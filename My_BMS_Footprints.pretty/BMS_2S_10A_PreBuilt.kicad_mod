@@ -1,0 +1,49 @@
+(footprint "BMS_2S_10A" (layer F.Cu) (tedit 5F2A1A0B)
+  (descr "2S 10A Li-Ion BMS Protection Board with Balance, 46.7x23mm")
+  (tags "BMS 2S Li-ion Battery")
+
+  (attr through_hole)
+
+  (fp_text reference U** (at 0 -13) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value BMS_2S_10A (at 0 13) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  ;; Board Outline - 46.7 x 23 mm
+  (fp_line (start -23.35 -11.5) (end 23.35 -11.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 23.35 -11.5) (end 23.35 11.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 23.35 11.5) (end -23.35 11.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -23.35 11.5) (end -23.35 -11.5) (layer F.SilkS) (width 0.15))
+
+  ;; Courtyard
+  (fp_line (start -24.35 -12.5) (end 24.35 -12.5) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 24.35 -12.5) (end 24.35 12.5) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 24.35 12.5) (end -24.35 12.5) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -24.35 12.5) (end -24.35 -12.5) (layer F.CrtYd) (width 0.05))
+
+  ;; Pads (example 2.5mm pad, 1.5mm drill)
+  (pad 1 thru_hole circle (at -21.81 -9.96) (size 2.5 2.5) (drill 1.5) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at -21.81 9.96) (size 2.5 2.5) (drill 1.5) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 21.81 -9.96) (size 2.5 2.5) (drill 1.5) (layers *.Cu *.Mask))
+  (pad 4 thru_hole circle (at 21.81 9.96) (size 2.5 2.5) (drill 1.5) (layers *.Cu *.Mask))
+  (pad 5 thru_hole circle (at 0 9.96) (size 2.5 2.5) (drill 1.5) (layers *.Cu *.Mask))
+
+  ;; Silkscreen Labels
+  (fp_text user "B-" (at -21.81 -11.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "BM" (at -21.81 11.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "B+" (at 21.81 -11.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "P+" (at 21.81 11.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "P-" (at 0 11.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
